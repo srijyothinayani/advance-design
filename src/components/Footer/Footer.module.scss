@@ -1,0 +1,36 @@
+@import "../../mixins.scss";
+
+.footerWrapper {
+    background-color: $dark-color;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: white;
+    text-align: center;
+}
+
+.dFlex {
+    display: flex;
+}
+
+.dBlock {
+    display: block;
+}
+
+.footerContent {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 1rem;
+}
+
+.footerText {
+    display: block;
+    padding: 1rem;
+}
+
+@media only screen and (max-width: 914px) {
+    .footerContent {
+        display: block;
+    }
+}

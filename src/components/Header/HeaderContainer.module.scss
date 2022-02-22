@@ -1,0 +1,68 @@
+@import "../../mixins.scss";
+
+.headerWrapper {
+  @include header;
+  display: flex;
+  flex-direction: row;
+  padding: 0.5rem;
+  width: 100%;
+}
+
+.logoHead {
+  display: flex;
+  align-items: center;
+  background-color: #303030;
+  color: #303030;
+  padding: 0.5rem;
+}
+
+.searchBar {
+  display: flex !important;
+  flex-basis: 50%;
+  background-color: $primary-color;
+  border: none;
+}
+
+.box {
+  margin: auto;
+  display: block;
+}
+
+.inputIconWrap {
+  border: 1px solid $primary-dark-color;
+  display: flex;
+  flex-direction: row;
+  min-width: 400px;
+}
+
+.inputIcon {
+  background: $primary-dark-color;
+}
+
+.inputWithIcon {
+  border: none;
+  flex: 1;
+  outline: none;
+}
+
+.inputIcon,
+.inputWithIcon {
+  padding: 0.3rem;
+  background: $primary-dark-color;
+}
+
+.shadowLine {
+    padding: 1rem;
+    background: $primary-dark-color;
+  }
+
+  @media only screen and (max-width: 914px) {
+    .headerWrapper {
+      padding-right: 0;
+      padding-left: 0;
+    }
+
+    .inputIconWrap {
+      min-width: 200px;
+    }
+  }

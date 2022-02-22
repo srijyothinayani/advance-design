@@ -1,0 +1,13 @@
+$primary-color: #cc0033;
+$primary-dark-color: #a00028;
+$font-color: #FFFFFF;
+$dark-color: #272727;
+
+@mixin header {
+    background-color: $primary-color;
+    color: $font-color;
+}
+
+@mixin footer {
+    background-color: $dark-color;
+}
