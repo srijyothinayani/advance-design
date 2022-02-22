@@ -4,14 +4,14 @@ export const Footer = () => {
   return (
     <div className={`${styles.footerWrapper} ${styles.footerContent}`}>
       <div className={styles.footerText}>
-        <div>Left Footer Links</div>
-        <div>Left Footer One</div>
-        <div>Left Footer Two</div>
+        <div className={styles.footerHead}>Left Footer Links</div>
+        <div>Left Footer Link ONE</div>
+        <div>Left Footer Link TWO</div>
       </div>
       <div className={styles.footerText}>
-        <div>Left Footer Links</div>
-        <div>Left Footer One</div>
-        <div>Left Footer Two</div>
+        <div className={styles.footerHead}>Left Footer Links</div>
+        <div>Left Footer Link ONE</div>
+        <div>Left Footer Link TWO</div>
       </div>
     </div>
   );

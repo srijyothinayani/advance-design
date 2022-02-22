@@ -2,13 +2,23 @@
 
 .footerWrapper {
     background-color: $dark-color;
+    // position: fixed;
+    // left: 0;
+    // bottom: 0;
+    // width: 100%;
+    color: rgb(226, 222, 222);
+    text-align: center;
     position: fixed;
-    left: 0;
     bottom: 0;
     width: 100%;
-    color: white;
-    text-align: center;
+    font-size: 14px;
+    font-weight: 100;
 }
+.footerHead {
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
 
 .dFlex {
     display: flex;
@@ -21,16 +31,21 @@
 .footerContent {
     display: flex;
     justify-content: space-evenly;
-    padding: 1rem;
+    padding: 2rem;
 }
 
 .footerText {
     display: block;
     padding: 1rem;
+    text-align: left;
 }
 
-@media only screen and (max-width: 914px) {
+@media only screen and (max-width: 768px) {
     .footerContent {
         display: block;
+    }
+
+    .footerText {
+        text-align: center;
     }
 }
